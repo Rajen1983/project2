@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            display: flex;
+            flex-direction: column;
+            width: 25%;
+            border: 2px solid rgb(243, 248, 243);
+            border-radius: 20px;
+            padding: 30px;
+        }
+        form h1, #btn{text-align: center;
+        color:aliceblue;}
+        input , select{
+            height: 30px;
+            border-radius: 10px;
+        }
+        label{ color:white}
+        #btn {
+            width: 100px;
+            margin: 10px;
+            background-color: rgb(100, 86, 7);
+            height: 30px;
+        }
+        .two{display:flex;
+            flex-direction: row;
+        border:5px solid;
+justify-content: space-around;
+padding:20px;
+}
+        table,th,tr,td{border:2px solid white;
+        border-collapse: collapse;
+        border-radius: white;
+        color: white;
+    }
+    img{height: 80px;
+    width: 200px;
+border-radius: 70%;}
+    nav{display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(100, 86, 7);
+justify-content: center;
+align-items: center;}
+    li{display:inline;
+    color:rgb(9, 9, 116);
+    font-size:large;
+    font-weight: bold;
+padding:50px;}
+li select{background-color: rgb(100, 86, 7);}
+  .img img{
+height:10%;
+width:80%;}
+.img{ padding-left:250px;
+height: 100%;
+background-color: rgb(12, 3, 47);}
+.two{background-color: rgb(12, 3, 47);}
+
+table{text-align: center;}
+footer{text-align: center;
+background-color: rgb(250, 249, 247);
+}
+@media screen and (min-width:260px) and (max-width: 480px) {
+    body{margin:0;
+        padding:0;}
+        form h1, #btn{text-align: center;
+        color:aliceblue;}
+        li select{display:none;}
+        
+        .two{display:flex;
+            flex-direction:column;
+        
+            
+    }
+    nav{display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgb(100, 86, 7);
+justify-content: center;
+align-items: center;}
+footer{text-align: center;
+background-color: rgb(250, 249, 247);
+}
+form{margin-bottom: 50px;}
+form {    
+    padding:0;
+            width: 105%;
+            border: 2px solid rgb(243, 248, 243);
+            border-radius: 20px;
+            margin-right: auto;
+            }
+            table{margin:0;}
+}
+@media screen and (min-width:490px) and (max-width: 1280px) {
+    body{margin:0;
+    padding:0;}
+    form h1, #btn{text-align: center;
+    color:aliceblue;}
+    li select{display:none;}
+    
+    .two{display:flex;
+        flex-direction:column;        
+}
+nav{display:flex;
+flex-direction: row;
+justify-content: space-between;
+background-color: rgb(100, 86, 7);
+justify-content: center;
+align-items: center;}
+footer{ display:block;
+    text-align: center;
+background-color: rgb(250, 249, 247);
+}
+form{margin-bottom: 50px;}
+form {    
+padding:20px;
+        width: 95%;
+        border: 2px solid rgb(243, 248, 243);
+        border-radius: 20px;
+        
+        }
+        table{margin:0;}
+        .img img{margin:0;
+        padding:0;}
+}
+
+    </style>
+</head>
+<body>
+    <nav>
+        <img src="https://as2.ftcdn.net/v2/jpg/05/18/91/65/1000_F_518916512_hE43PTRCZZs7fMTl1Nn6hdiIkhJmSIBC.jpg" alt="">
+    <div>
+        <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Service
+            <select>
+                <option value="">choose from here</option>
+                <option value="UI/UX">Admission</option>
+                <option value="java">Result</option>
+                <option value="database">Transfer Certificate</option>
+                
+            </select>
+        </li>
+        <li>Contact</li>
+        <li>Help</li>
+    </ul>
+    </div>
+    </nav>
+    <div class="img" ><img src="https://scontent.fdel29-1.fna.fbcdn.net/v/t39.30808-6/299309388_374695271499204_5378301803766078927_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_ohc=mTwndoAWEMEQ7kNvgHiGQWJ&_nc_ht=scontent.fdel29-1.fna&oh=00_AYCd8xBety5YBz7We3oWAbvRnkk0GNHpGaWXKp4wqUERtA&oe=666C941E" alt=""></div>
+   
+    <div class="two">
+    <form id="form">
+        <h1>Registration Form</h1>
+        <label>Name-</label>
+        <input type="text" id="name" placeholder="Please enter your name">
+        <label>Email-</label>
+        <input type="email" id="email" placeholder="Please enter your email">
+        <label>Course-</label>
+        <select id="course">
+            <option value="">choose from here</option>
+            <option value="UI/UX">UI/UX</option>
+            <option value="java">java</option>
+            <option value="database">database</option>
+            
+        </select>
+        <button id="btn">Submit</button>
+    </form>
+    <table>
+        
+        <thead>
+            <tr>
+                <th>Sr. No.</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Course</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+        
+    </table>
+    
+</div>
+<footer>
+    <ul>
+    <li>help line</li>
+    <li>report</li>
+    <li>cutomercare</li>
+    <li>180025820156</li>
+</ul>
+</footer>
+
+    <script>
+        let arr = JSON.parse(localStorage.getItem("userdetails")) || [];
+
+        let form = document.getElementById("form");
+        let btn = document.getElementById("btn");
+        let tableBody = document.getElementById("tableBody");
+        
+        btn.addEventListener("click", getData);
+
+        function getData(e) {
+            e.preventDefault(); 
+            let details = {
+                name: document.getElementById("name").value, 
+                email: document.getElementById("email").value,
+                course: document.getElementById("course").value,
+            };
+            arr.push(details);
+            localStorage.setItem("userdetails", JSON.stringify(arr));
+            form.reset();
+            displayData(arr);
+        }
+
+        function displayData(users) {
+            tableBody.innerHTML = "";
+            users.forEach((user, index) => {
+                let tr = document.createElement("tr");
+                let td1 = document.createElement("td");
+                td1.innerText = index + 1;
+                let td2 = document.createElement("td");
+                td2.innerText = user.name;
+                let td3 = document.createElement("td");
+                td3.innerText = user.email;
+                let td4 = document.createElement("td");
+                td4.innerText = user.course;
+                tr.append(td1,td2,td3,td4);
+              
+                tableBody.appendChild(tr);
+            });
+        }
+
+        displayData(arr);
+    </script>
+</body>
+</html>
